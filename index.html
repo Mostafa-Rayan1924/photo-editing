@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
+    <title>Your editor</title>
+</head>
+<!-- <i class="fa-solid fa-sun"></i> -->
+<body id="body">
+    <div class="container">
+        <div class="img">
+            <div class="img-box">
+                <img id="img"  >
+                <canvas id="canvas"></canvas>
+            </div>
+<label class="la" for="upload">Upload</label>
+<input type="file" id="upload">
+        </div>
+
+        <div class="filters">
+<ul>
+    <li>
+        <label class="la" for="saturate">saturate</label>
+        <input type="range" id="saturate" min="0" max="200" value="100">
+    </li>
+    <li>
+        <label class="la" for="contrast">contrast</label>
+        <input type="range" id="contrast" min="0" max="200" value="100">
+    </li>
+    <li>
+        <label class="la" for="brightness">brightness</label>
+        <input type="range" id="brightness" min="0" max="200" value="100">
+    </li>
+    <li>
+        <label class="la" for="sepia">sepia</label>
+        <input type="range" id="sepia" min="0" max="200" value="0">
+    </li>
+    <li>
+        <label class="la"  for="grayScale">grayScale</label>
+        <input type="range" id="grayScale" step="0.1" min="0" max="1" value="0">
+
+    </li> 
+    <li>
+        <label class="la" for="blur">blur</label>
+        <input type="range" id="blur" step="0.1" min="0" max="10" value="0">
+    </li> 
+    <li>
+        <label class="la" for="hueRotate">hueRotate</label>
+        <input type="range" id="hueRotate"  min="0" max="350" value="0">
+    </li> 
+    <li>
+        <a id="download" download="true">Download</a>
+        <span>Reset</span>
+    </li>
+</ul>
+        </div>
+
+        <small id="icon"><i  class="fa-solid fa-sun"></i></small>
+
+    </div>
+    <script src="main.js"></script>
+</body>
+</html>
